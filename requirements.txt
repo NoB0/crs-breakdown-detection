@@ -5,3 +5,13 @@ mypy
 docformatter
 pre-commit
 pydocstyle==6.1.1
+pytest-cov
+types-PyYAML
+types-requests
+dialoguekit==0.0.8
+websockets<11.0
+nltk
+networkx
+pyvis
+pandas
+openpyxl

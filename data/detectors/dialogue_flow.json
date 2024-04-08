@@ -1,0 +1,606 @@
+{
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+        {
+            "label": "WELCOME",
+            "group": 2,
+            "size": 10,
+            "id": "A_WELCOME"
+        },
+        {
+            "label": "ACKNOWLEDGE",
+            "group": 1,
+            "size": 10,
+            "id": "U_ACKNOWLEDGE"
+        },
+        {
+            "label": "ELICIT",
+            "group": 2,
+            "size": 10,
+            "id": "A_ELICIT"
+        },
+        {
+            "label": "REVEAL",
+            "group": 1,
+            "size": 10,
+            "id": "U_REVEAL"
+        },
+        {
+            "label": "COUNT_RESULTS",
+            "group": 2,
+            "size": 10,
+            "id": "A_COUNT_RESULTS"
+        },
+        {
+            "label": "RECOMMEND",
+            "group": 2,
+            "size": 10,
+            "id": "A_RECOMMEND"
+        },
+        {
+            "label": "REJECT",
+            "group": 1,
+            "size": 10,
+            "id": "U_REJECT"
+        },
+        {
+            "label": "NO_RESULTS",
+            "group": 2,
+            "size": 10,
+            "id": "A_NO_RESULTS"
+        },
+        {
+            "label": "RESTART",
+            "group": 1,
+            "size": 10,
+            "id": "U_RESTART"
+        },
+        {
+            "label": "REMOVE_PREFERENCE",
+            "group": 1,
+            "size": 10,
+            "id": "U_REMOVE_PREFERENCE"
+        },
+        {
+            "label": "BYE",
+            "group": 1,
+            "size": 10,
+            "id": "U_BYE"
+        },
+        {
+            "label": "BYE",
+            "group": 2,
+            "size": 10,
+            "id": "A_BYE"
+        },
+        {
+            "label": "INQUIRE",
+            "group": 1,
+            "size": 10,
+            "id": "U_INQUIRE"
+        },
+        {
+            "label": "INFORM",
+            "group": 2,
+            "size": 10,
+            "id": "A_INFORM"
+        },
+        {
+            "label": "RESTART",
+            "group": 2,
+            "size": 10,
+            "id": "A_RESTART"
+        },
+        {
+            "label": "ACCEPT",
+            "group": 1,
+            "size": 10,
+            "id": "U_ACCEPT"
+        },
+        {
+            "label": "CONTINUE_RECOMMENDATION",
+            "group": 2,
+            "size": 10,
+            "id": "A_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "label": "DENY",
+            "group": 1,
+            "size": 10,
+            "id": "U_DENY"
+        },
+        {
+            "label": "CONTINUE_RECOMMENDATION",
+            "group": 1,
+            "size": 10,
+            "id": "U_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "label": "CANT_HELP",
+            "group": 2,
+            "size": 10,
+            "id": "A_CANT_HELP"
+        },
+        {
+            "label": "UNK",
+            "group": 1,
+            "size": 10,
+            "id": "U_UNK"
+        },
+        {
+            "id": "A_UNK"
+        },
+        {
+            "id": "A_ACKNOWLEDGE"
+        },
+        {
+            "id": "U_HI"
+        }
+    ],
+    "links": [
+        {
+            "width": 1,
+            "source": "A_WELCOME",
+            "target": "U_ACKNOWLEDGE"
+        },
+        {
+            "width": 1,
+            "source": "A_WELCOME",
+            "target": "U_REVEAL"
+        },
+        {
+            "source": "A_WELCOME",
+            "target": "U_HI"
+        },
+        {
+            "width": 1,
+            "source": "U_ACKNOWLEDGE",
+            "target": "A_ELICIT"
+        },
+        {
+            "width": 1,
+            "source": "U_ACKNOWLEDGE",
+            "target": "A_NO_RESULTS"
+        },
+        {
+            "source": "U_ACKNOWLEDGE",
+            "target": "A_INFORM"
+        },
+        {
+            "width": 1,
+            "source": "A_ELICIT",
+            "target": "U_REVEAL"
+        },
+        {
+            "source": "A_ELICIT",
+            "target": "U_REMOVE_PREFERENCE"
+        },
+        {
+            "source": "A_ELICIT",
+            "target": "A_COUNT_RESULTS"
+        },
+        {
+            "source": "A_ELICIT",
+            "target": "U_BYE"
+        },
+        {
+            "source": "A_ELICIT",
+            "target": "U_RESTART"
+        },
+        {
+            "width": 1,
+            "source": "U_REVEAL",
+            "target": "A_COUNT_RESULTS"
+        },
+        {
+            "width": 1,
+            "source": "U_REVEAL",
+            "target": "A_RECOMMEND"
+        },
+        {
+            "width": 1,
+            "source": "U_REVEAL",
+            "target": "A_NO_RESULTS"
+        },
+        {
+            "width": 1,
+            "source": "U_REVEAL",
+            "target": "A_INFORM"
+        },
+        {
+            "width": 1,
+            "source": "U_REVEAL",
+            "target": "A_CANT_HELP"
+        },
+        {
+            "source": "U_REVEAL",
+            "target": "A_ELICIT"
+        },
+        {
+            "width": 1,
+            "source": "A_COUNT_RESULTS",
+            "target": "A_ELICIT"
+        },
+        {
+            "source": "A_COUNT_RESULTS",
+            "target": "U_BYE"
+        },
+        {
+            "source": "A_COUNT_RESULTS",
+            "target": "U_RESTART"
+        },
+        {
+            "width": 1,
+            "source": "A_RECOMMEND",
+            "target": "U_REJECT"
+        },
+        {
+            "width": 1,
+            "source": "A_RECOMMEND",
+            "target": "U_REMOVE_PREFERENCE"
+        },
+        {
+            "width": 1,
+            "source": "A_RECOMMEND",
+            "target": "U_INQUIRE"
+        },
+        {
+            "width": 1,
+            "source": "A_RECOMMEND",
+            "target": "U_DENY"
+        },
+        {
+            "width": 1,
+            "source": "A_RECOMMEND",
+            "target": "U_BYE"
+        },
+        {
+            "width": 1,
+            "source": "A_RECOMMEND",
+            "target": "U_REVEAL"
+        },
+        {
+            "width": 1,
+            "source": "A_RECOMMEND",
+            "target": "U_UNK"
+        },
+        {
+            "width": 1,
+            "source": "A_RECOMMEND",
+            "target": "U_ACCEPT"
+        },
+        {
+            "source": "A_RECOMMEND",
+            "target": "U_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "source": "A_RECOMMEND",
+            "target": "U_RESTART"
+        },
+        {
+            "width": 1,
+            "source": "U_REJECT",
+            "target": "A_NO_RESULTS"
+        },
+        {
+            "width": 1,
+            "source": "U_REJECT",
+            "target": "A_RECOMMEND"
+        },
+        {
+            "source": "U_REJECT",
+            "target": "A_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "source": "U_REJECT",
+            "target": "A_CANT_HELP"
+        },
+        {
+            "width": 1,
+            "source": "A_NO_RESULTS",
+            "target": "U_RESTART"
+        },
+        {
+            "width": 1,
+            "source": "A_NO_RESULTS",
+            "target": "U_REMOVE_PREFERENCE"
+        },
+        {
+            "width": 1,
+            "source": "A_NO_RESULTS",
+            "target": "U_BYE"
+        },
+        {
+            "width": 1,
+            "source": "A_NO_RESULTS",
+            "target": "U_REVEAL"
+        },
+        {
+            "width": 1,
+            "source": "A_NO_RESULTS",
+            "target": "U_INQUIRE"
+        },
+        {
+            "width": 1,
+            "source": "U_RESTART",
+            "target": "U_REVEAL"
+        },
+        {
+            "width": 1,
+            "source": "U_RESTART",
+            "target": "A_RESTART"
+        },
+        {
+            "width": 1,
+            "source": "U_REMOVE_PREFERENCE",
+            "target": "A_COUNT_RESULTS"
+        },
+        {
+            "width": 1,
+            "source": "U_REMOVE_PREFERENCE",
+            "target": "A_RECOMMEND"
+        },
+        {
+            "width": 1,
+            "source": "U_REMOVE_PREFERENCE",
+            "target": "A_NO_RESULTS"
+        },
+        {
+            "source": "U_REMOVE_PREFERENCE",
+            "target": "A_ELICIT"
+        },
+        {
+            "width": 1,
+            "source": "U_BYE",
+            "target": "A_BYE"
+        },
+        {
+            "source": "A_BYE",
+            "target": "U_BYE"
+        },
+        {
+            "width": 1,
+            "source": "U_INQUIRE",
+            "target": "A_INFORM"
+        },
+        {
+            "width": 1,
+            "source": "U_INQUIRE",
+            "target": "A_NO_RESULTS"
+        },
+        {
+            "source": "U_INQUIRE",
+            "target": "A_CANT_HELP"
+        },
+        {
+            "width": 1,
+            "source": "A_INFORM",
+            "target": "U_INQUIRE"
+        },
+        {
+            "width": 1,
+            "source": "A_INFORM",
+            "target": "U_RESTART"
+        },
+        {
+            "width": 1,
+            "source": "A_INFORM",
+            "target": "U_ACCEPT"
+        },
+        {
+            "width": 1,
+            "source": "A_INFORM",
+            "target": "U_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "width": 1,
+            "source": "A_INFORM",
+            "target": "U_REVEAL"
+        },
+        {
+            "width": 1,
+            "source": "A_INFORM",
+            "target": "U_UNK"
+        },
+        {
+            "width": 1,
+            "source": "A_INFORM",
+            "target": "U_REJECT"
+        },
+        {
+            "source": "A_INFORM",
+            "target": "U_ACKNOWLEDGE"
+        },
+        {
+            "source": "A_INFORM",
+            "target": "U_BYE"
+        },
+        {
+            "width": 1,
+            "source": "A_RESTART",
+            "target": "A_ELICIT"
+        },
+        {
+            "source": "A_RESTART",
+            "target": "U_BYE"
+        },
+        {
+            "width": 1,
+            "source": "U_ACCEPT",
+            "target": "A_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "width": 1,
+            "source": "U_ACCEPT",
+            "target": "A_RECOMMEND"
+        },
+        {
+            "width": 1,
+            "source": "U_ACCEPT",
+            "target": "A_CANT_HELP"
+        },
+        {
+            "width": 1,
+            "source": "A_CONTINUE_RECOMMENDATION",
+            "target": "U_BYE"
+        },
+        {
+            "width": 1,
+            "source": "A_CONTINUE_RECOMMENDATION",
+            "target": "U_RESTART"
+        },
+        {
+            "width": 1,
+            "source": "A_CONTINUE_RECOMMENDATION",
+            "target": "U_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "source": "A_CONTINUE_RECOMMENDATION",
+            "target": "U_ACCEPT"
+        },
+        {
+            "source": "A_CONTINUE_RECOMMENDATION",
+            "target": "U_REJECT"
+        },
+        {
+            "source": "A_CONTINUE_RECOMMENDATION",
+            "target": "U_REMOVE_PREFERENCE"
+        },
+        {
+            "width": 1,
+            "source": "U_DENY",
+            "target": "A_INFORM"
+        },
+        {
+            "source": "U_DENY",
+            "target": "A_RECOMMEND"
+        },
+        {
+            "width": 1,
+            "source": "U_CONTINUE_RECOMMENDATION",
+            "target": "A_RECOMMEND"
+        },
+        {
+            "width": 1,
+            "source": "U_CONTINUE_RECOMMENDATION",
+            "target": "A_CANT_HELP"
+        },
+        {
+            "width": 1,
+            "source": "U_CONTINUE_RECOMMENDATION",
+            "target": "A_NO_RESULTS"
+        },
+        {
+            "source": "U_CONTINUE_RECOMMENDATION",
+            "target": "A_ELICIT"
+        },
+        {
+            "width": 1,
+            "source": "A_CANT_HELP",
+            "target": "U_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "width": 1,
+            "source": "A_CANT_HELP",
+            "target": "U_REVEAL"
+        },
+        {
+            "width": 1,
+            "source": "A_CANT_HELP",
+            "target": "U_BYE"
+        },
+        {
+            "width": 1,
+            "source": "A_CANT_HELP",
+            "target": "U_ACKNOWLEDGE"
+        },
+        {
+            "source": "A_CANT_HELP",
+            "target": "U_RESTART"
+        },
+        {
+            "width": 1,
+            "source": "U_UNK",
+            "target": "A_CANT_HELP"
+        },
+        {
+            "width": 1,
+            "source": "U_UNK",
+            "target": "A_NO_RESULTS"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_ELICIT"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_RECOMMEND"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_INFORM"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_COUNT_RESULTS"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_CONTINUE_RECOMMENDATION"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_RESTART"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_UNK"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_ACKNOWLEDGE"
+        },
+        {
+            "source": "U_UNK",
+            "target": "A_BYE"
+        },
+        {
+            "source": "A_UNK",
+            "target": "U_UNK"
+        },
+        {
+            "source": "A_UNK",
+            "target": "U_BYE"
+        },
+        {
+            "source": "A_UNK",
+            "target": "U_RESTART"
+        },
+        {
+            "source": "A_ACKNOWLEDGE",
+            "target": "U_REVEAL"
+        },
+        {
+            "source": "A_ACKNOWLEDGE",
+            "target": "U_BYE"
+        },
+        {
+            "source": "A_ACKNOWLEDGE",
+            "target": "U_RESTART"
+        },
+        {
+            "source": "U_HI",
+            "target": "A_WELCOME"
+        },
+        {
+            "source": "U_HI",
+            "target": "A_ACKNOWLEDGE"
+        },
+        {
+            "source": "U_HI",
+            "target": "A_ELICIT"
+        }
+    ]
+}
