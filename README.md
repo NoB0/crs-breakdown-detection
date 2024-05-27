@@ -3,7 +3,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 ![Python version](https://img.shields.io/badge/python-3.9-blue)
 
-This repository contains the data related to the case study presented in the paper "_Identifying Breakdowns in Conversational Recommender Systems using User Simulation_" submitted to the ACM Conversational User Interfaces conference 2024.
+This repository contains the data related to the case study presented in the paper "_Identifying Breakdowns in Conversational Recommender Systems using User Simulation_" presented to the ACM Conversational User Interfaces conference 2024.
 
 The paper proposes a methodology to automatically detect breakdowns in conversational recommender systems using user simulation. It can serve as a diagnostic or development tool. An overview of the methodology is presented in the following figure:
 
@@ -42,3 +42,22 @@ To save the report in an Excel file, use the `--output_file` argument, otherwise
 ```bash
 python -m breakdowns_detection.run_detection --help
 ```
+
+## Citation
+
+If you use the resources presented in this repository, please cite:
+
+```bibtex
+@misc{Bernard:2024:arXiv,
+ author={Bernard, Nolwenn and Balog, Krisztian},
+ title={Identifying Breakdowns in Conversational Recommender Systems using User Simulation},
+ year=2024,
+ eprint={2405.14249},
+ archiveprefix={arXiv},
+ primaryclass={cs.IR}
+}
+```
+
+## Contact
+
+Should you have any questions, please contact Nolwenn Bernard at nolwenn.m.bernard@uis.no
